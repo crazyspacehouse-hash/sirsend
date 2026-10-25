@@ -28,7 +28,7 @@ export default function RegisterPage() {
 
     if (error) setError(error.message);
     else {
-      alert(t.lang === 'ar' ? 'تم إنشاء الحساب! تحقق من بريدك.' : lang === 'tr' ? 'Hesap oluşturuldu! E-postanızı kontrol edin.' : 'Account created! Check your email.');
+      alert(lang === 'ar' ? 'تم إنشاء الحساب! تحقق من بريدك.' : lang === 'tr' ? 'Hesap oluşturuldu! E-postanızı kontrol edin.' : 'Account created! Check your email.');
       router.push('/login');
     }
     setLoading(false);
