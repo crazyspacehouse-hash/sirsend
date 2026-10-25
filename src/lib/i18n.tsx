@@ -5,7 +5,7 @@ import { translations, Language } from './translations';
 type I18nContextType = {
   lang: Language;
   setLang: (lang: Language) => void;
-  t: typeof translations.ar;
+  t: any;
   dir: 'rtl' | 'ltr';
 };
 

@@ -13,7 +13,7 @@ export default function RegisterPage() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
